@@ -12,7 +12,7 @@ namespace Sandbox
         public int Size { get; private set; }
         private int count;
         private int word;
-        
+
         public int Word
         {
             get { return word; }
@@ -21,20 +21,21 @@ namespace Sandbox
 
         public int Count
         {
-            get {return count;}
-
+            get { return count; }
+           
         }
+
         private int capacity;
 
         public int Capacity
         {
-            get {return capacity;}
-            set {capacity = value;}
+            get { return capacity; }
+            set { capacity = value; }
         }
         public T this[int index]
         {
-            get {return items[index];}
-            set {items[index] = value;}
+            get { return items[index]; }
+            set { items[index] = value; }
         }
 
         public CustomList()
@@ -59,23 +60,44 @@ namespace Sandbox
             }
             items[count] = itemToAdd;
             count += 1;
-            if(count == 3)
-            {
-              items.ToString();
-                for(int i = 0; i < items.Length; i++)
-                {
-                    items[i].ToString();
-                       
-                }
-                
-            }
-
-
         }
-        
+        public void Remove(T itemToRemove)
+        {
+            for (int i = 0; i < count; i++)                 //for loop to check the list for the value to be deleted
+            {
+                if (itemToRemove.Equals(items[i]))
+                {
+                    count -= 1;
+                    for (int j = i; j < (count + 1); j++)
+                    {
+                        items[j] = items[j + 1];
+                    }
+                }
+                else
+                {
+                    items[i] = items[i];
+                }
+            }
+        }
+        public override string ToString()
+        {
+            string itemsWord = "[";
 
-
-
+            for (int i = 0; i < count; i++)
+            {
+                string word = items[i].ToString();
+                if (i == count - 1)
+                {
+                    itemsWord += word + "]";
+                    break;
+                }
+                itemsWord += word + ", ";
+            }
+            return itemsWord;
+        }
 
     }
+
 }
+
+

@@ -22,7 +22,7 @@ namespace Sandbox
         public int Count
         {
             get { return count; }
-           
+
         }
 
         private int capacity;
@@ -63,7 +63,7 @@ namespace Sandbox
         }
         public void Remove(T itemToRemove)
         {
-            for (int i = 0; i < count; i++)                 //for loop to check the list for the value to be deleted
+            for (int i = 0; i < count; i++)
             {
                 if (itemToRemove.Equals(items[i]))
                 {
@@ -79,6 +79,7 @@ namespace Sandbox
                 }
             }
         }
+
         public override string ToString()
         {
             string itemsWord = "[";
@@ -97,7 +98,7 @@ namespace Sandbox
         }
 
     }
-
 }
+
 
 

@@ -7,10 +7,6 @@ namespace CustomListTests
     [TestClass]
     public class CustomListTests
     {
-        // unit test for adding multiple items to check position of last item
-        // unit test for adding multiple items to check Count property
-        // unit test for adding number of items beyond 'Capacity' but it still adds
-
 
         [TestMethod]
         public void Add_AddToEmptyList_ItemGoesToIndexZero()
@@ -229,14 +225,14 @@ namespace CustomListTests
             CustomList<int> testList = new CustomList<int>();
 
             string expected = "[1, 3, 5]";
-            
+
             //Act
             testList.Add(1);
             testList.Add(3);
             testList.Add(5);
 
             string actual = testList.ToString();        // still not done, convert to another array
-                                                 //Assert
+                                                        //Assert
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
@@ -257,7 +253,8 @@ namespace CustomListTests
 
             Assert.AreEqual(expected, actual);
 
-        }   }
+        }
+    }
 }
 
 

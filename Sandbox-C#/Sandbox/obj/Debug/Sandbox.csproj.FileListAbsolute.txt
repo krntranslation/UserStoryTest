@@ -19,3 +19,9 @@ C:\Users\mhein\Desktop\Sandbox-C#\Sandbox\obj\Debug\Sandbox.csprojAssemblyRefere
 C:\Users\mhein\Desktop\Sandbox-C#\Sandbox\obj\Debug\Sandbox.csproj.CoreCompileInputs.cache
 C:\Users\mhein\Desktop\Sandbox-C#\Sandbox\obj\Debug\Sandbox.exe
 C:\Users\mhein\Desktop\Sandbox-C#\Sandbox\obj\Debug\Sandbox.pdb
+\\Mac\Home\Desktop\devCode\Week5\GenericListTestSolution\UserStoryTest\Sandbox-C#\Sandbox\bin\Debug\Sandbox.exe.config
+\\Mac\Home\Desktop\devCode\Week5\GenericListTestSolution\UserStoryTest\Sandbox-C#\Sandbox\bin\Debug\Sandbox.exe
+\\Mac\Home\Desktop\devCode\Week5\GenericListTestSolution\UserStoryTest\Sandbox-C#\Sandbox\bin\Debug\Sandbox.pdb
+\\Mac\Home\Desktop\devCode\Week5\GenericListTestSolution\UserStoryTest\Sandbox-C#\Sandbox\obj\Debug\Sandbox.csprojAssemblyReference.cache
+\\Mac\Home\Desktop\devCode\Week5\GenericListTestSolution\UserStoryTest\Sandbox-C#\Sandbox\obj\Debug\Sandbox.exe
+\\Mac\Home\Desktop\devCode\Week5\GenericListTestSolution\UserStoryTest\Sandbox-C#\Sandbox\obj\Debug\Sandbox.pdb

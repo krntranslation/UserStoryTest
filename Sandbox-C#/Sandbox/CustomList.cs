@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
+
 
 namespace Sandbox
 {
-    public class CustomList<T>
+    public class CustomList<T> : IEnumerable
     {
         private T[] items;
         public int Size { get; private set; }
@@ -95,6 +97,36 @@ namespace Sandbox
                 itemsWord += word + ", ";
             }
             return itemsWord;
+        }
+       
+        private string[] items1;
+        private List<string> items2;
+       
+        
+        public static CustomList<T> operator +(CustomList<T> firstList, CustomList<T> secondList)
+        {
+            CustomList<int> item = new CustomList<int>();
+            
+            for(int i = 0; i < item.count; i++)
+            {
+                for(int j = 0; j < item.count; j++)
+                {
+
+                }
+            }
+        }
+
+
+         public IEnumerator GetEnumerator()
+        {
+            for(int i = 0;i < items.Length; i++)
+            {
+                
+                yield return items1[i];
+                yield return items2[2];
+                //return this.GetEnumerator();
+            }
+            
         }
 
     }

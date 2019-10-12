@@ -94,39 +94,54 @@ namespace Sandbox
                     itemsWord += word + "]";
                     break;
                 }
-                itemsWord += word + ", ";
+                itemsWord += word + ", "; 
             }
             return itemsWord;
         }
-       
-        private string[] items1;
-        private List<string> items2;
-       
-        
+
         public static CustomList<T> operator +(CustomList<T> firstList, CustomList<T> secondList)
         {
-            CustomList<int> item = new CustomList<int>();
-            
-            for(int i = 0; i < item.count; i++)
-            {
-                for(int j = 0; j < item.count; j++)
-                {
+            CustomList<T> item = new CustomList<T>();
 
-                }
+            for (int i = 0; i < firstList.count; i++)
+            {
+                item.Add(firstList[i]);
             }
+            for (int j = 0; j < secondList.count; j++)
+            {
+                item.Add(secondList[j]);
+            }
+            return item;
         }
-
-
-         public IEnumerator GetEnumerator()
+        public static CustomList<T> operator -(CustomList<T> firstList, CustomList<T> secondList)
         {
-            for(int i = 0;i < items.Length; i++)
+            CustomList<T> item = new CustomList<T>();
+            for (int i = 0; i < firstList.count; i++)
             {
-                
-                yield return items1[i];
-                yield return items2[2];
-                //return this.GetEnumerator();
+                item.Add(firstList[i]);
             }
-            
+            for (int j = 0; j < secondList.count; j++)
+            {
+                item.Add(secondList[j]);
+            }
+            return item;
+
+            // I want to bring back a list of just 3, 5
+
+        }
+        private CustomList<T> holdThis;
+        public string[] items1;
+        private List<string> items2;
+        
+        public IEnumerator GetEnumerator()
+        {
+            for(int i = 0; i < items.Length; i++)
+            {
+                yield return items[i];
+                yield return items1[i];
+                
+            }
+
         }
 
     }

@@ -24,7 +24,7 @@ namespace Sandbox
         public int Count
         {
             get { return count; }
-
+            set { value = count; }          //addded  value = count to see if this is whats missing
         }
 
         private int capacity;
@@ -130,15 +130,15 @@ namespace Sandbox
 
         }
         private CustomList<T> holdThis;
-        public string[] items1;
+                
         private List<string> items2;
-        
+         // public string[] items1;     //dont know if i need this or not
         public IEnumerator GetEnumerator()
         {
             for(int i = 0; i < items.Length; i++)
             {
                 yield return items[i];
-                yield return items1[i];
+                //yield return items1[i];   //dont know if i need this or not
                 
             }
 

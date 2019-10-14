@@ -24,9 +24,8 @@ namespace Sandbox
         public int Count
         {
             get { return count; }
-            set { value = count; }          //addded  value = count to see if this is whats missing
+            // set { value = count; }          
         }
-
         private int capacity;
 
         public int Capacity
@@ -125,20 +124,13 @@ namespace Sandbox
                 item.Add(secondList[j]);
             }
             return item;
-
-            // I want to bring back a list of just 3, 5
-
         }
-        private CustomList<T> holdThis;
-                
-        private List<string> items2;
-         // public string[] items1;     //dont know if i need this or not
         public IEnumerator GetEnumerator()
         {
             for(int i = 0; i < items.Length; i++)
             {
                 yield return items[i];
-                //yield return items1[i];   //dont know if i need this or not
+                
                 
             }
 
